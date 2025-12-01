@@ -26,12 +26,11 @@ def part1(steps):
 
 if __name__ == '__main__':
 
-    sample_input = Path('./sample_input')
+    sample_input = Path('./input')
     problem_input = Path('./input')
 
-    with open('./input') as f:
+    #with open(sample_input) as f:
+    with open(problem_input) as f:
         puzzle_input = [l.strip() for l in f.readlines()]
     
-    print(puzzle_input)
-
     part1(puzzle_input)
